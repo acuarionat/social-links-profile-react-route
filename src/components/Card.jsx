@@ -1,15 +1,17 @@
-import React from 'react'
+import React from 'react';
+import UserDetails from './UserDetails';
+import ButtonSection from './ButtonSection';
 import "./Card.css";
-import UserDetails from './UserDetails'
-import ButtonSection from './ButtonSection'
 
-const Card = () => {
+const Card = (props) => { 
+  const user = props.user;
+  console.log(user);
   return (
     <div className="contenedor">
-        <UserDetails/>
+        <UserDetails user={user}/>
         <ButtonSection/>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

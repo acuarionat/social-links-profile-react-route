@@ -11,7 +11,7 @@ body
     background-color: var(--OffBlack);
     margin: 0 auto;
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,9 @@ h3
     font-weight: 400;
     font-size: 14px;
     color: var(--Green);
-    line-height: 0px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 0px;
 }
 p
 {
