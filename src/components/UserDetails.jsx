@@ -1,9 +1,8 @@
 import React from "react";
 import "./UserDetails.css";
 
-const UserDetails = (props) => {
-  const user = props.user; 
-  
+const UserDetails = ({user}) => {
+/*   const user = prop.user; */
   return (
     <div className="texto">
       <img src={user.avatar} alt={`avatar de ${user.name}`} />
