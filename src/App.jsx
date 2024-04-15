@@ -4,16 +4,16 @@ import Card from "./components/Card";
 
 function App() {
   const [users, setUsers] = useState([]);
-  
+
   useEffect(() => {
     fetch("https://661037cf0640280f219c98e1.mockapi.io/api/v2/users")
       .then((res) => res.json())
       .then((data) => {
         setUsers(data);
-        console.log(data);
+        /* console.log(data); */
       });
   }, []);
-  
+
   return (
     <>
       {users.map((user) => (

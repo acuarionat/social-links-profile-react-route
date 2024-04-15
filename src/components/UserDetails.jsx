@@ -1,8 +1,7 @@
 import React from "react";
 import "./UserDetails.css";
 
-const UserDetails = (props) => {
-  const user = props.user; 
+const UserDetails = ({user}) => {
   
   return (
     <div className="texto">
