@@ -22,23 +22,21 @@ h2
 {
     font-weight: 600;
     color: var(--White);
-    line-height: 0px;
 }
 h3
 {
     
     font-weight: 400;
-    font-size: 14px;
+    font-size: 20px;
     color: var(--Green);
-    line-height: 1;
-    text-align: center;
     margin-bottom: 0px;
+
 }
 p
 {
     font-size: 14px;
     color: var(--White);
-    line-height: 40px;
+
 }
 button
 {

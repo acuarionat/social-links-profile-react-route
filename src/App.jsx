@@ -3,21 +3,28 @@ import "./App.css";
 import Card from "./components/Card";
 
 function App() {
-  const [users, setUsers] = useState([]);
+  const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
-    fetch("https://661037cf0640280f219c98e1.mockapi.io/api/v2/users")
+    fetch("https://rickandmortyapi.com/api/character")
       .then((res) => res.json())
       .then((data) => {
-        setUsers(data);
-        /* console.log(data); */
+      setCharacters(data);
+      const randomCharacters = getRandomCharacters(data.results, 10);
+        setCharacters(randomCharacters);
       });
   }, []);
 
+
+  const getRandomCharacters = (charactersArray, count) => {
+  const shuffledCharacters = charactersArray.sort(() => 0.5 - Math.random());
+    return shuffledCharacters.slice(0, count);
+  };
+
   return (
     <>
-      {users.map((user) => (
-        <Card key={user.id} user={user} />
+      {characters.map((character, index) => (
+        <Card key={index} character={character} />
       ))}
     </>
   );

@@ -1,15 +1,16 @@
 import React from "react";
 import "./UserDetails.css";
 
-const UserDetails = ({user}) => {
-  
+const UserDetails = ({character}) => {
   return (
-    <div className="texto">
-      <img src={user.avatar} alt={`avatar de ${user.name}`} />
-      <h2>{user.name}</h2>
-      <h3>{user.ubication}</h3>
-      <p>{user.description}</p>
-    </div>
+    <>
+      <img src={character.image} alt={`avatar de ${character.name}`} />
+      <div class="texto">
+      <h3>{character.name}</h3>
+      <p> Estatus: {character.status}</p>
+      <p> Especie: {character.species}</p>
+      </div>
+    </>
   );
 };
 

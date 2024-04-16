@@ -3,16 +3,14 @@
     display: flex;
     flex-direction: column;
     justify-content:center;
-    align-items:center;
-    margin: 0px 10px 0px 10px;
-    width: fit-content;
-    height: 40%;
-    padding: 15px 0px 13px 0px;
+    align-items:left;
+    width: 60%;
 }
 img
 {
     border-radius: 50%;
-    height: 80px;
+    height: 100px;
+    width: 100px;
     margin:40px 0px 20px 0px;
 }
 
