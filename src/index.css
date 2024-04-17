@@ -18,26 +18,19 @@ body
     font-family: "Inter", sans-serif;
 
 }
-h2
-{
-    font-weight: 600;
-    color: var(--White);
-}
 h3
 {
     
     font-weight: 400;
     font-size: 20px;
     color: var(--Green);
-    margin-bottom: 0px;
-
 }
 p
 {
     font-size: 14px;
     color: var(--White);
-
 }
+
 button
 {
     background-color: var(--Grey);

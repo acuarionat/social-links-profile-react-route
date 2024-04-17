@@ -4,13 +4,12 @@
     flex-direction: column;
     justify-content:center;
     align-items:left;
-    width: 60%;
+    width: 50%;
 }
 img
 {
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    margin:40px 0px 20px 0px;
 }
 
