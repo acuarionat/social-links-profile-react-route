@@ -1,6 +1,6 @@
 import React from 'react';
 import './TextoConEstilo.css'; 
-
+/* Hecho por Natalia Lozano Mostajo */
 function TextoConEstilo({ texto }) {
   const determinarClase = (texto) => {
     if (texto === 'Dead') {
