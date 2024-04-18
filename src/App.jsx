@@ -6,19 +6,31 @@ function App() {
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/character")
-      .then((res) => res.json())
-      .then((data) => {
-      setCharacters(data);
-      const randomCharacters = getRandomCharacters(data.results, 10);
-        setCharacters(randomCharacters);
-      });
+    fetchRandomCharacters();
   }, []);
 
+  const fetchRandomCharacters = () => {
+    const randomIds = generateRandomIds(10, 826);
+    const promises = randomIds.map(id =>
+      fetch(`https://rickandmortyapi.com/api/character/${id}`)
+        .then(res => res.json())
+    );
 
-  const getRandomCharacters = (charactersArray, count) => {
-  const shuffledCharacters = charactersArray.sort(() => 0.5 - Math.random());
-    return shuffledCharacters.slice(0, count);
+    Promise.all(promises)
+      .then(data => {
+        setCharacters(data);
+      });
+  };
+
+  const generateRandomIds = (count, maxId) => {
+    const ids = [];
+    while (ids.length < count) {
+      const randomId = Math.floor(Math.random() * (maxId + 1));
+      if (!ids.includes(randomId)) {
+        ids.push(randomId);
+      }
+    }
+    return ids;
   };
 
   return (
