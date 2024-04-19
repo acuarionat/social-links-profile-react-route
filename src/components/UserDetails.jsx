@@ -1,4 +1,4 @@
-/* import React from "react";
+import React from "react";
 import "./UserDetails.css";
 import TextoConEstilo from "./TextoConEstilo"; 
 
@@ -17,4 +17,4 @@ const UserDetails = ({ character }) => {
 };
 
 export default UserDetails;
- */
+ 

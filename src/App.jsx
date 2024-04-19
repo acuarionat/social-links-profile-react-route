@@ -1,5 +1,5 @@
 import React from "react";
-import RickAndMortyApp from "./RickAndMortyApp";
+import Navigation from "./routes/Navigation";
 import "./App.css";
 
 
@@ -7,7 +7,7 @@ function App() {
   
   return (
     <>
-      <RickAndMortyApp/>
+      <Navigation/>
     </>
   );
 }
