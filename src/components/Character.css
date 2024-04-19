@@ -1,23 +1,22 @@
-/* .contenedor
-{
+.personaje
+{   
     background-color: var(--DarkGrey);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content:center;
     align-items:center;
-    width: 340px;
+    width: 500px;
     height: fit-content;
     border-radius: 10px;  
-    justify-content:space-around;
     margin: 30px;
+    padding: 20px 5px 20px 5px;
 }
 
 @media screen and (min-width: 1440px)
 {
-  .contenedor
+  .personaje
   {
-      width: 340px;  
+      width: fit-content;  
       height: fit-content;
   }
 }
- */

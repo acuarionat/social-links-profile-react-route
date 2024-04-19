@@ -1,16 +1,16 @@
-import React from "react";
-import UserDetails from "./UserDetails";
+/* import React from "react";
+import UserDetails from "./UserDetails"; */
 /* import ButtonSection from "./ButtonSection";*/
-import "./Card.css";
+/* import "./Card.css";
 
-const Card = ({character}) => {
+const Card = ({character}) => { */
   /*   console.log(user);*/ 
-  return (
+/*   return (
     <div className="contenedor">
-      <UserDetails character={character} />
+      <UserDetails character={character} /> */
       {/* <ButtonSection/> */}
-    </div>
+/*     </div>
   );
 };
 
-export default Card;
+export default Card; */
