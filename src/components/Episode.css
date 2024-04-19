@@ -1,6 +1,7 @@
 .episodio
 {
     padding: 0;
+    margin-bottom:30px ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

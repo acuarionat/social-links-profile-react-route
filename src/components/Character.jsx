@@ -8,6 +8,7 @@ const Character = ({ personaje, episodios }) => {
     <div className="personaje">
       <CharacterSection personaje={personaje} />
       <Episode episodios={episodios} />
+      <button>Home</button>
     </div>
   );
 };
