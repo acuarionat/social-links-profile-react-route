@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from "react";
 import Character from "./components/Character";
+import { useSearchParams } from "react-router-dom";
 
 function RickAndMortyApp() {
   const [personaje, setPersonaje] = useState([]);
   const [episodios, setEpisodio] = useState([]);
+  let [searchParams, setSearchParams] = useSearchParams();
+const id=searchParams.get("id")
 
   useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/character/1")
+    fetch(`https://rickandmortyapi.com/api/character/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setPersonaje(data);
-        console.log(data);
+        /* console.log(data); */
         fetchEpisodes(data.episode.slice(0, 4));
       });
   }, []);
@@ -23,8 +26,7 @@ function RickAndMortyApp() {
     Promise.all(promises)
       .then((episodios) => {
         setEpisodio(episodios);
-        console.log(episodios);
-      })
+/*         console.log(episodios);*/      })
       .catch((error) => console.error(error));
   };
 

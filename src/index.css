@@ -6,11 +6,18 @@
         --OffBlack: hsl(0, 0%, 8%);
         --Green: hsl(75, 94%, 57%);
 }
+#root
+{
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+}
 body
 {
     background-color: var(--OffBlack);
     margin: 0 auto;
-    width: 100%;
+    width: 100vw;
     height: auto;
     display: flex;
     justify-content: center;
