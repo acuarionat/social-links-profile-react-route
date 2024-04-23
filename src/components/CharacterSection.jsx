@@ -5,7 +5,7 @@ import TextoConEstilo from "./TextoConEstilo";
 const CharacterSection = ({ personaje }) => {
   return (
     <>
-      <img src={personaje.image} alt={`avatar de ${personaje.name}`} />
+      <img className="imagen" src={personaje.image} alt={`avatar de ${personaje.name}`} />
       <div className="descripcion">
         <h2>{personaje.name}</h2>
         <p>

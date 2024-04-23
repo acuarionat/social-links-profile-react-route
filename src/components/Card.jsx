@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Card = ({ character }) => {
 /*   console.log(character);
  */  return (
-    <NavLink to={`/character?id=${character.id}`} >
+    <NavLink className="nav-link" to={`/character?id=${character.id}`} >
       <div className="total">
         <div className="contenedor">
           <UserDetails character={character} />

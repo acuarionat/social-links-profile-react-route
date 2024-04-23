@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Character from "./components/Character";
 import { useSearchParams } from "react-router-dom";
+/* Hecho por Natalia Lozano */
 
 function RickAndMortyApp() {
   const [personaje, setPersonaje] = useState([]);
@@ -14,7 +15,7 @@ const id=searchParams.get("id")
       .then((data) => {
         setPersonaje(data);
         /* console.log(data); */
-        fetchEpisodes(data.episode.slice(0, 4));
+        fetchEpisodes(data.episode.slice(0, 5));
       });
   }, []);
 

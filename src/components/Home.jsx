@@ -1,6 +1,6 @@
 import React,{useEffect,useState}  from "react";
 import Card from "./Card";
-
+/* Hecho por Natalia Lozano */
 const Home = () => {
     const [characters, setCharacters]=useState([]);
  useEffect(() => {
