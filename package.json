@@ -1,5 +1,4 @@
 {
-  "homepage": " https://acuarionat.github.io/social-links-profile-main-react/",
   "name": "social-links-profile",
   "private": true,
   "version": "0.0.0",
@@ -9,8 +8,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
